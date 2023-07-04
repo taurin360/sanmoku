@@ -192,6 +192,9 @@
       // 空いているboxからランダムに選ぶ
       const fixed = blank[Math.floor(Math.random() * blank.length)];
       this.fixed(fixed);
+      if (this.gameset() === true) {
+        this.nextStage();
+      }
     }
 
     patternSet(i) {
@@ -223,7 +226,6 @@
       if ( cnt === 0) {
         this.system.textContent = '引き分けです。';
         this.drawSound.play();
-        this.start.classList.remove('dnone');
         return true;
       } else {
         // まだ空きがある

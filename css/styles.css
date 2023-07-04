@@ -42,7 +42,7 @@ body {
 #precede {
   font-size: 24px;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 #blue-unit,
@@ -70,7 +70,7 @@ body {
   all: unset;
   display: block;
   background: #f5f5f5;
-  margin: 32px auto;
+  margin: 16px auto 0;
   padding: 16px;
   border-radius: 16px;
   cursor: pointer;
