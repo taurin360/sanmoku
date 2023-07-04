@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#stadium {
+  width: 264px;
+  margin: 32px auto 0;
+  padding: 0;
+}
+
+#board {
+  background: #f5f5f5;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 78px;
+  height: 78px;
+  cursor: pointer;
+  border: 2px solid #030f7b;
+  border-radius: 50%;
+  opacity: .2;
+  user-select: none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.button.red {
+  background: red;
+  opacity: 1;
+}
+
+.button.blue {
+  background: blue;
+  opacity: 1;
+}
+
+#precede {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+#blue-unit,
+#red-unit {
+  width: 100%;
+  height: 96px;
+  line-height: 96px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#blue-unit {
+  border-bottom: 2px solid #dad9d9;
+  clip-path: polygon(0% 100%, 30% 0%, 70% 0%, 100% 100%);
+  color: blue;
+}
+
+#red-unit {
+  border-top: 2px solid #dad9d9;
+  clip-path: polygon(30% 100%, 0% 0%, 100% 0%, 70% 100%);
+  color: red;
+}
+
+.start {
+  all: unset;
+  display: block;
+  background: #f5f5f5;
+  margin: 32px auto;
+  padding: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.dnone {
+  display: none;
+}
+
+
